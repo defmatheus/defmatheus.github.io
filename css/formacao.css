@@ -131,8 +131,8 @@
   }
 
   .cursos h3 {
+    font-size: 1.25rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 20px;
     align-items: center;
