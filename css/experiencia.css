@@ -1,0 +1,113 @@
+.experiencia {
+  max-width: 1200px;
+  padding: 150px 20px 75px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+}
+
+.subtitulo {
+  color: #fafafa;
+}
+
+.experiencia-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 25px;
+  color: #d4d4d4;
+}
+
+.experiencia-texto strong {
+  color: #fafafa;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #d4d4d4;
+  position: relative;
+  gap: 15px 40px;
+  border-top: 1px solid #262626;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 20px;
+  background: linear-gradient(#6366f1, #312e81);
+  position: absolute;
+  left: -20px;
+  top: 28px;
+}
+
+.empresa-periodo {
+  font-size: 1.2rem;
+  position: absolute;
+  color: #fafafa;
+  top: 28px;
+  left: -70px;
+  font-weight: bold;
+}
+
+.empresa-atribuicoes {
+  color: #d4d4d4;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 1.2rem;
+  background: #4338ca;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.empresa-cargo-titulo {
+  margin-top: 25px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 20px;
+  }
+
+  .experiencia-texto {
+    font-size: 1.25rem;
+  }
+
+  .empresa-atribuicoes {
+    font-size: 1rem;
+  }
+
+  .empresa-habilidades {
+    font-size: 1rem;
+  }
+
+  .empresa-periodo {
+    position: initial;
+  }
+
+  .empresa::before {
+    left: -15px;
+  }
+}
+
+@media (max-width: 550px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
