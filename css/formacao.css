@@ -126,8 +126,16 @@
   }
 
   .cursos h3::before {
-    left: 290px;
-    top: 3px;
+    position: static;
+    order: 1;
+  }
+
+  .cursos h3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
   }
 
   .faculdade-curso::before {
