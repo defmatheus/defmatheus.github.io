@@ -99,7 +99,7 @@
   background: url(../img/cursos.svg) no-repeat center center;
   position: absolute;
   left: -36px;
-  top: -4px;
+  top: 1px;
 }
 
 .cursos li {
@@ -127,7 +127,7 @@
 
   .cursos h3::before {
     left: 290px;
-    top: 1px;
+    top: 3px;
   }
 
   .faculdade-curso::before {

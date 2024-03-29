@@ -4,7 +4,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 200px;
+  gap: 100px;
   align-items: center;
 }
 
@@ -43,5 +43,11 @@
 @media (max-width: 750px) {
   .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  .footer-contato li {
+    font-size: 1.25rem;
+    line-height: 1.33;
+    margin-bottom: 10px;
   }
 }
